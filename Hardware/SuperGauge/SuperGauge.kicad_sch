@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Super Gauge")
+    (date "${ISSUE}")
+    (rev "${FULL_REVISION}")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_01x05_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 7.62 0)
@@ -4638,6 +4644,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html" (at 257.81 32.385 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC#" "C141517" (at 246.38 47.625 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 41c18c18-5d0f-412d-82fa-0a1979c4106f))
