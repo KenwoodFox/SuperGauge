@@ -12,6 +12,7 @@ on:
   pull_request:
     paths:
       - "Hardware/**"
+      - ".github/workflows/**"
 
 #
 jobs:
