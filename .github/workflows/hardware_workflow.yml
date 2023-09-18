@@ -2,6 +2,8 @@ name: Hardware
 
 permissions:
   contents: write
+  actions: read
+  checks: write
 
 on:
   push:
