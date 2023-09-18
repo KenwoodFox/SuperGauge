@@ -2,6 +2,8 @@ name: Hardware
 
 permissions:
   contents: write
+  actions: read
+  checks: write
 
 on:
   push:
@@ -12,6 +14,7 @@ on:
   pull_request:
     paths:
       - "Hardware/**"
+      - ".github/workflows/**"
 
 #
 jobs:
@@ -44,14 +47,6 @@ jobs:
           name: Board-Hardware
           path: _hardwareOutput
 
-      - name: Discord notification if failed
-        if: ${{ failure() }}
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          args: "Building new board failed, most likely a DRC check."
-
   dev-publish:
     # publish only to devs
     runs-on: ubuntu-latest
@@ -63,12 +58,12 @@ jobs:
         with:
           name: Board-Hardware
 
-      - name: send custom message with args
-        uses: appleboy/discord-action@master
+      - name: Upload KiCAD Artifacts
+        uses: edunad/actions-image@v2.0.2
         with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          file: "*-3D_top.png"
+          path: "*-3D_top.png"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          title: "PCB"
 
   publish:
     # Only run on tags
