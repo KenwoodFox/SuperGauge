@@ -49,6 +49,7 @@ jobs:
 
   dev-publish:
     # publish only to devs
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     name: Dev-Publish
     needs: [KiCad_Hardware]
