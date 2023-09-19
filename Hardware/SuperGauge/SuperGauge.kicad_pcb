@@ -1680,7 +1680,7 @@
       (net 3 "GND") (pinfunction "SHIELD") (pintype "passive") (tstamp 3ab0644e-4727-4047-ae31-f0fc5899f0ed))
     (pad "S1" thru_hole oval (at 4.32 1.075 45) (size 1 1.6) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask")
       (net 3 "GND") (pinfunction "SHIELD") (pintype "passive") (tstamp dff85ca1-1333-49c1-b49f-f08b2023b63a))
-    (model "/home/joe/git/SNHU/EG-310-InvertedPendulum/Hardware/PendulumController/Libraries/Misc/USBC.STEP"
+    (model "${KENWOODFOX_3DMODELS}/USBC.STEP"
       (offset (xyz 0 3.5 1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 0))
