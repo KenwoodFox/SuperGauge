@@ -2793,7 +2793,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
-    (model "/home/joe/git/SuperGauge/CAD/Face.step"
+    (model "${KIPRJMOD}/Libraries/local/Face.step"
       (offset (xyz 0 -6 13.3))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 0))
