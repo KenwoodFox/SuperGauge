@@ -12,11 +12,6 @@
 
 void setup()
 {
-    // Setup serial
-    delay(200);
-    Serial.begin(115200);
-    Serial.println(REVISION);
-
     // Pins
     pinMode(STAT_LED, OUTPUT);
 }

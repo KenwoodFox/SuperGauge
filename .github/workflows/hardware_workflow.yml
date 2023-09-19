@@ -49,6 +49,7 @@ jobs:
 
   dev-publish:
     # publish only to devs
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     name: Dev-Publish
     needs: [KiCad_Hardware]
@@ -59,7 +60,7 @@ jobs:
           name: Board-Hardware
 
       - name: Upload KiCAD Artifacts
-        uses: edunad/actions-image@v2.0.2
+        uses: edunad/actions-image@v2.0.3
         with:
           path: "*-3D_top.png"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

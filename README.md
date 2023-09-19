@@ -18,7 +18,6 @@ First, clone this repo (and optionally checkout a branch)
 ```shell
 git clone https://github.com/KenwoodFox/SuperGauge.git
 cd SuperGauge
-git checkout new_board
 ```
 
 # Init Submodules
