@@ -443,7 +443,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../CAD/SuperGauge.step",
       "vrml": ""
     },
     "page_layout_descr_file": "Libraries/kenwoodfox-kicad-libraries/worksheets/BlankWorksheet.kicad_wks"
