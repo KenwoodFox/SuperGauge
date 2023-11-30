@@ -4232,7 +4232,7 @@
     (property "Value" "USBC" (at 26.035 19.685 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" (at 29.845 40.64 0)
+    (property "Footprint" "KenwoodFox:USB_C_Receptacle_XKB_U262-16XN-4BVC11_Full_Pads" (at 29.845 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 29.845 40.64 0)

@@ -59,7 +59,7 @@ jobs:
         with:
           name: Uniform_and_Style_Guide
 
-      - name: Upload artifacts to release
+      - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
